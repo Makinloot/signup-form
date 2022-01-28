@@ -36,12 +36,33 @@ body {
     color: #fff;
     text-transform: uppercase;
 }
+.field-box label {
+    font-size: 75%;
+}
+.inside-field {
+    position: relative;
+    flex-direction: column;
+    font-size: 50%;
+    gap: 0.2rem;
+}
 .field-box input {
     width: 200px;
     height: 25px;
     outline: none;
     border: none;
     border-radius: 0.3rem;
+}
+.field-error {
+    color: red;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.done-icon, .error-icon {
+    position: absolute;
+    right: 0;
+    display: none;
 }
 .button-wrapper {
     gap: 1rem;
@@ -58,4 +79,13 @@ body {
 .button-wrapper button:hover {
     background: #fff;
     color: #000;
+}
+
+.inside-field {
+    flex-direction: column;
+    font-size: 50%;
+    gap: 0.2rem;
+}
+.field-error {
+    color: #ff0000;
 }
