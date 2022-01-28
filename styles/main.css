@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
 }
 .flex {
     display: flex;
@@ -40,6 +42,7 @@ body {
     outline: none;
     border: none;
     border-radius: 0.3rem;
+    font-weight: 900;
 }
 .button-wrapper {
     gap: 1rem;
