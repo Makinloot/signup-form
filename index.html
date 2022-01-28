@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Signup form</title>
+</head>
+<body>
+    <div class="form-wrapper">
+        <form action="">
+            <div class="field-box flex">
+                <label for="first-name">first name</label>
+                <input type="text" id="first-name" required>
+            </div>
+            <div class="field-box flex">
+                <label for="last-name">last name</label>
+                <input type="text" id="last-name" required>
+            </div>
+            <div class="field-box flex">
+                <label for="username">username</label>
+                <input type="text" id="username" minlength="4" maxlength="12" required>
+            </div>
+            <div class="field-box flex">
+                <label for="id">id</label>
+                <input type="number" id="id" required>
+            </div>
+            <div class="field-box flex">
+                <label for="date">date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="field-box flex">
+                <label for="email">email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="field-box flex">
+                <label for="password">password</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="field-box flex">
+                <label for="confirm-password">confirm password</label>
+                <input type="password" id="confirm-password" required>
+            </div>
+            <div class="field-box flex">
+                <label for="url">url</label>
+                <input type="url" id="url" required>
+            </div>
+            <div class="button-wrapper flex">
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
