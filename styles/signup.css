@@ -35,6 +35,7 @@ body {
     gap: 1rem;
     color: #fff;
     align-items: center;
+    justify-content: space-around;
 }
 .burger {
     flex-direction: column;
