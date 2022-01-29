@@ -1,4 +1,5 @@
 const signupForm = document.querySelector("#signup-form");
+const passwordStrength = document.querySelector('.password-strength');
 
 const firstName = document.querySelector("#first-name");
 const lastName = document.querySelector("#last-name");
@@ -176,6 +177,17 @@ function validateUrl(){
         urlIcon.style.display = 'inline-block';
     }
 }
+function validatePasswordStrength(){
+    if(password.value.length < 8) {
+        passwordStrength.style.background = '#ff0000';
+    } else if(password.value.length == 8){
+        passwordStrength.style.background = '#ffae00';
+    } else if(password.value.length > 8){
+        passwordStrength.style.background = '#1eff00';
+    } else {
+        passwordStrength.style.background = '#ffffff';
+    }
+}
 
 firstName.addEventListener("input", () => {
   validateFirstName();
@@ -197,6 +209,7 @@ email.addEventListener('input', () => {
 })
 password.addEventListener('input', () => {
     validatePassword();
+    validatePasswordStrength();
 })
 confirmPassword.addEventListener('input', () => {
     validateConfirmPassword();

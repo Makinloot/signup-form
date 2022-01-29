@@ -4,11 +4,15 @@
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
     font-weight: 900;
+    text-decoration: none;
 }
 .flex {
     display: flex;
 }
-html,
+body {
+    background: #000;
+}
+/* html,
 body {
     height: 100%;
     width: 100%;
@@ -16,10 +20,34 @@ body {
     justify-content: center;
     align-items: center;
     background: #000;
+} */
+
+.container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem .5rem;
+    font-size: 100%;
+    background: #000;
+
 }
-
-
-
+.login-register {
+    gap: 1rem;
+    color: #fff;
+    align-items: center;
+}
+.burger {
+    flex-direction: column;
+}
+.burger div {
+    margin: 5px;
+    width: 1.5rem;
+    height: .2rem;
+    background: #fff;
+}
+.form-bg {
+    background: url(/images/noise.gif);
+    padding: .5rem;
+}
 .form-wrapper {
     width: 500px;
     max-width: 100%;
@@ -28,6 +56,18 @@ body {
     background: #000;
     border: 1px solid #fff;
     border-radius: .5rem;
+}
+.before-form {
+    justify-content: space-between;
+    align-items: center;
+}
+.before-form p, a {
+    margin: 10px 10px 0 10px;
+    color: #fff;
+    font-size: 70%;
+}
+hr {
+    margin: 1rem;
 }
 .field-box {
     margin: 1rem;
@@ -64,6 +104,29 @@ input::-webkit-outer-spin-button {
     right: 0;
     display: none;
 }
+.strength {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.password-text {
+    font-size: 50%;
+}
+.password-strength {
+    width: 102px;
+    height: 5px;
+    border-radius: 1rem;
+}
+#check-terms {
+    width: 20px;
+    height: 15px;
+}
+.terms-text {
+    font-size: 50%;
+}
+.terms-text a {
+    color: #aca1a1;
+}
 .button-wrapper {
     gap: 1rem;
 }
@@ -80,7 +143,6 @@ input::-webkit-outer-spin-button {
     background: #fff;
     color: #000;
 }
-
 .inside-field {
     flex-direction: column;
     font-size: 50%;
@@ -88,4 +150,11 @@ input::-webkit-outer-spin-button {
 }
 .field-error {
     color: #ff0000;
+}
+.rights {
+    margin: 2em;
+    /* margin: 2em; */
+    font-size: 70%;
+    gap: 4rem;
+    color: #fff;
 }
