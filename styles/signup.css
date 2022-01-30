@@ -68,7 +68,7 @@ body {
 }
 
 .form-bg {
-    background: url(/images/noise.gif);
+    background: #161515;
     padding: .5rem;
 }
 .registration {
