@@ -1,5 +1,7 @@
 const signupForm = document.querySelector("#signup-form");
 const passwordStrength = document.querySelector('.password-strength');
+const burger = document.querySelector('#burger');
+const burgerItems = document.querySelector('#burger-items');
 
 const firstName = document.querySelector("#first-name");
 const lastName = document.querySelector("#last-name");
@@ -187,6 +189,16 @@ function validatePasswordStrength(){
     } else {
         passwordStrength.style.background = '#ffffff';
     }
+}
+
+document.onclick = function(e){
+    if(e.target.id !== 'burger'){
+        burgerItems.classList.remove('active');
+    }
+}
+
+burger.onclick = function(){
+    burgerItems.classList.toggle('active');
 }
 
 firstName.addEventListener("input", () => {

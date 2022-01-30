@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/signup.css">
     <title>Signup form</title>
 </head>
@@ -12,21 +13,38 @@
     <header>
         <div class="container flex">
             <div class="logo-box">
-                <img class="logo" src="images/illustration-logo.png" alt="logo">
+                <a href="index.html"><img class="logo" src="images/illustration-logo.png" alt="logo"></a>
             </div>
             <div class="login-register flex">
                 <p>Login</p>
                 <p>Register</p>
-                <div class="burger flex">
+                <div class="burger flex" id="burger">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
+                <div class="burger-items" id="burger-items">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <hr>
+                            <li><a href="#">About us</a></li>
+                            <hr>
+                            <li><a href="#">Portfolio</a></li>
+                            <hr>
+                            <li><a href="#">Contact</a></li>
+                            <hr>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
+        <hr>
     </header>
     <main>
         <div class="form-bg">
+            <h2 class="registration">REGISTER</h2>
             <div class="form-wrapper">
                 <div class="before-form flex">
                     <p>register an account</p>

@@ -5,6 +5,7 @@
     font-family: 'Spartan', sans-serif;
     font-weight: 900;
     text-decoration: none;
+    list-style: none;
 }
 .flex {
     display: flex;
@@ -31,24 +32,51 @@ body {
 
 }
 .login-register {
-    width: 200px;
+    position: relative;
     gap: 1rem;
     color: #fff;
-    align-items: center;
-    justify-content: space-around;
+}
+.login-register p {
+    display: none;
 }
 .burger {
     flex-direction: column;
+    cursor: pointer;
 }
+
 .burger div {
     margin: 5px;
     width: 1.5rem;
     height: .2rem;
     background: #fff;
 }
+.burger-items {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background: #000;
+    top: 8em;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+    transform: translateX(200px);
+    transition: .5s linear;
+}
+#burger-items.active {
+    transform: translateX(0);
+}
+
 .form-bg {
     background: url(/images/noise.gif);
     padding: .5rem;
+}
+.registration {
+    color: #3a3a3a;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 1em 0;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 4px;
 }
 .form-wrapper {
     width: 500px;
