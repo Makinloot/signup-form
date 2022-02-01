@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="styles/signup.css">
     <title>Signup form</title>
 </head>
+
 <body>
     <header>
         <div class="container flex">
@@ -43,114 +45,112 @@
         <hr>
     </header>
     <main>
-        <div class="form-bg">
-            <h2 class="registration">REGISTER</h2>
-            <div class="form-wrapper">
-                <div class="before-form flex">
-                    <p>register an account</p>
-                    <a href="">already a member?</a>
+        <div class="form-wrapper">
+            <div class="before-form flex">
+                <p>register an account</p>
+                <a href="">already a member?</a>
+            </div>
+            <hr>
+            <form action="" id="signup-form" action="#" method="GET" novalidate>
+                <div class="field-box flex">
+                    <label for="first-name" id="first-name-label">first name</label>
+                    <div class="inside-field flex">
+                        <input type="text" id="first-name" maxlength="16" required>
+                        <span class="field-error" id="first-name-error"></span>
+                        <img class="done-icon" id="done-icon-1" src="images/done_black.svg" alt="done-icon">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-1">
+                    </div>
+                </div>
+                <div class="field-box flex">
+                    <label for="last-name">last name</label>
+                    <div class="inside-field flex">
+                        <input type="text" id="last-name" maxlength="16" required>
+                        <span class="field-error" id="last-name-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-2">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-2">
+                    </div>
+                </div>
+                <div class="field-box flex">
+                    <label for="username">username</label>
+                    <div class="inside-field flex">
+                        <input type="text" id="username" minlength="4" maxlength="12" required>
+                        <span class="field-error" id="username-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-3">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-3">
+                    </div>
+                </div>
+                <div class="field-box flex">
+                    <label for="id">id</label>
+                    <div class="inside-field flex">
+                        <input type="number" id="id" required>
+                        <span class="field-error" id="id-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-4">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-4">
+                    </div>
+                </div>
+                <div class="field-box flex">
+                    <label for="date">date</label>
+                    <div class="inside-field flex">
+                        <input type="date" id="date" required>
+                        <span class="field-error" id="date-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-5">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-5">
+                    </div>
+                </div>
+                <div class="field-box flex">
+                    <label for="email">email</label>
+                    <div class="inside-field flex">
+                        <input type="email" id="email" required>
+                        <span class="field-error" id="email-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-6">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-6">
+                    </div>
+                </div>
+                <div class="field-box flex">
+                    <label for="password">password</label>
+                    <div class="inside-field flex">
+                        <input type="password" id="password" minlength="8" maxlength="16" required>
+                        <span class="field-error" id="password-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-7">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-7">
+                    </div>
+                </div>
+                <div class="field-box flex">
+                    <label for="confirm-password">confirm password</label>
+                    <div class="inside-field flex">
+                        <input type="password" id="confirm-password" required>
+                        <span class="field-error" id="confirm-password-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-8">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-8">
+                    </div>
+                </div>
+                <div class="field-box flex strength">
+                    <p class="password-text">Password Strength</p>
+                    <div class="password-strength"></div>
+                </div>
+                <div class="field-box flex">
+                    <label for="url">url</label>
+                    <div class="inside-field flex">
+                        <input type="url" id="url" required>
+                        <span class="field-error" id="url-error"></span>
+                        <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-9">
+                        <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-9">
+                    </div>
                 </div>
                 <hr>
-                <form action="" id="signup-form" action="#" method="GET" novalidate>
-                    <div class="field-box flex">
-                        <label for="first-name" id="first-name-label">first name</label>
-                        <div class="inside-field flex">
-                            <input type="text" id="first-name" maxlength="16" required>
-                            <span class="field-error" id="first-name-error"></span>
-                            <img class="done-icon" id="done-icon-1" src="images/done_black.svg" alt="done-icon">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-1">
-                        </div>
+                <div class="field-box flex">
+                    <input id="check-terms" type="checkbox">
+                    <p class="terms-text">To complete registration, you must read and agree to our <a href="#">terms and
+                            conditions</a></p>
+                </div>
+                <hr>
+                <div class="button-wrapper flex">
+                    <div class="inside-field">
+                        <button type="submit">submit</button>
+                        <button type="reset">reset</button>
                     </div>
-                    <div class="field-box flex">
-                        <label for="last-name">last name</label>
-                        <div class="inside-field flex">
-                            <input type="text" id="last-name" maxlength="16" required>
-                            <span class="field-error" id="last-name-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-2">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-2">
-                        </div>
-                    </div>
-                    <div class="field-box flex">
-                        <label for="username">username</label>
-                        <div class="inside-field flex">
-                            <input type="text" id="username" minlength="4" maxlength="12" required>
-                            <span class="field-error" id="username-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-3">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-3">
-                        </div>
-                    </div>
-                    <div class="field-box flex">
-                        <label for="id">id</label>
-                        <div class="inside-field flex">
-                            <input type="number" id="id" required>
-                            <span class="field-error" id="id-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-4">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-4">
-                        </div>
-                    </div>
-                    <div class="field-box flex">
-                        <label for="date">date</label>
-                        <div class="inside-field flex">
-                            <input type="date" id="date" required>
-                            <span class="field-error" id="date-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-5">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-5">
-                        </div>
-                    </div>
-                    <div class="field-box flex">
-                        <label for="email">email</label>
-                        <div class="inside-field flex">
-                            <input type="email" id="email" required>
-                            <span class="field-error" id="email-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-6">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-6">
-                        </div>
-                    </div>
-                    <div class="field-box flex">
-                        <label for="password">password</label>
-                        <div class="inside-field flex">
-                            <input type="password" id="password" minlength="8" maxlength="16" required>
-                            <span class="field-error" id="password-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-7">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-7">
-                        </div>
-                    </div>
-                    <div class="field-box flex">
-                        <label for="confirm-password">confirm password</label>
-                        <div class="inside-field flex">
-                            <input type="password" id="confirm-password" required>
-                            <span class="field-error" id="confirm-password-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-8">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-8">
-                        </div>
-                    </div>
-                    <div class="field-box flex strength">
-                        <p class="password-text">Password Strength</p>
-                        <div class="password-strength"></div>
-                    </div>
-                    <div class="field-box flex">
-                        <label for="url">url</label>
-                        <div class="inside-field flex">
-                            <input type="url" id="url" required>
-                            <span class="field-error" id="url-error"></span>
-                            <img src="images/done_black.svg" alt="done-icon" class="done-icon" id="done-icon-9">
-                            <img src="images/close_black_24dp.svg" alt="error-icon" class="error-icon" id="error-icon-9">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="field-box flex">
-                        <input id="check-terms" type="checkbox">
-                        <p class="terms-text">To complete registration, you must read and agree to our <a href="#">terms and conditions</a></p>
-                    </div>
-                    <hr>
-                    <div class="button-wrapper flex">
-                        <div class="inside-field">
-                            <button type="submit">submit</button>
-                            <button type="reset">reset</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
@@ -161,4 +161,5 @@
     </footer>
     <script src="js/signup.js"></script>
 </body>
+
 </html>

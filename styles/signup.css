@@ -12,7 +12,7 @@
 }
 body {
     background: #000;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /* html,
 body {
@@ -65,19 +65,6 @@ body {
 }
 #burger-items.active {
     transform: translateX(0);
-}
-
-.form-bg {
-    background: #161515;
-    padding: .5rem;
-}
-.registration {
-    color: #3a3a3a;
-    font-size: 3.5em;
-    text-align: center;
-    margin: 1em 0;
-    font-family: 'Alfa Slab One', cursive;
-    letter-spacing: 4px;
 }
 .form-wrapper {
     width: 500px;
