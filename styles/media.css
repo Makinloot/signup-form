@@ -1,0 +1,21 @@
+@media (min-width: 1024px) {
+    .login-register p {
+        display: block;
+    }
+    .nav-bar-wrapper {
+        display: block;
+    }
+    .nav-ul {
+        display: flex;
+    }
+    .nav-li {
+        margin: 0 1rem;
+        font-size: 1.5em;
+    }
+    .nav-li a:hover {
+        color: rgb(155, 155, 155);
+    }
+    .burger {
+        display: none;
+    }
+}

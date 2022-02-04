@@ -36,8 +36,12 @@ body {
     position: relative;
     gap: 1rem;
     color: #fff;
+    align-items: center;
 }
 .login-register p {
+    display: none;
+}
+.nav-bar-wrapper {
     display: none;
 }
 .burger {
