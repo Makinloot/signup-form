@@ -12,6 +12,7 @@
 }
 body {
     background: #000;
+    
 }
 /* html,
 body {
@@ -29,7 +30,6 @@ body {
     padding: 1.5rem .5rem;
     font-size: 100%;
     background: #000;
-    overflow: hidden;
 
 }
 .login-register {
@@ -52,7 +52,7 @@ body {
     background: #fff;
 }
 .burger-items {
-    position: absolute;
+    position: fixed;
     width: 200px;
     height: 250px;
     background: #000;
